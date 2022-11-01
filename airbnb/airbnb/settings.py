@@ -93,14 +93,14 @@ ITEM_PIPELINES = {
 REQUEST_FINGERPRINTER_IMPLEMENTATION = '2.7'
 TWISTED_REACTOR = 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'
 
-SELENIUM_AGENT = r'C:\Users\mirac\Downloads\Compressed\chromedriver_win32\chromedriver.exe'
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+SELENIUM_AGENT = os.path.join(BASE_DIR, 'chromedriver.exe')
 
 # MONGO DB VARIABLES
 MONGO_URL = 'mongodb+srv://blueprime:yYodwDZEmaH5cKvC@webscrapy.enfuxqb.mongodb.net/?retryWrites=true&w=majority'
 MONGO_DB_NAME = 'AirBNBHomes'
 MONGO_COLLECTION_NAME = 'Homes'
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
 CSV_FILE = os.path.join(BASE_DIR, 'homes.csv')
-
