@@ -95,8 +95,11 @@ TWISTED_REACTOR = 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# For Windows
+# SELENIUM_AGENT = os.path.join(BASE_DIR, 'chromedriver.exe')
 
-SELENIUM_AGENT = os.path.join(BASE_DIR, 'chromedriver.exe')
+# For Linux
+SELENIUM_AGENT = os.path.join(BASE_DIR, 'chromedriver')
 
 # MONGO DB VARIABLES
 MONGO_URL = 'mongodb+srv://blueprime:yYodwDZEmaH5cKvC@webscrapy.enfuxqb.mongodb.net/?retryWrites=true&w=majority'
