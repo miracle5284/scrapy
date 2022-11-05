@@ -5,7 +5,7 @@
 
 2. switch to its directory in the command line and run
 
-    `pip install -r requiremnts.txt`
+    `pip3 install -r requiremnts.txt`
 
 3. After all dependencies have been installed successfully, run
 
